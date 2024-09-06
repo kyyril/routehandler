@@ -10,7 +10,7 @@ export const Data = [
     age: 50,
   },
   {
-    id: 4,
+    id: 3,
     name: "Nurul",
     age: 20,
   },
