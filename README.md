@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 💰 List of Content 💰
 
-## Getting Started
+- **Route Handler**  
+  Customizing the way routes are handled in your application.  
+  *Example:* Define custom route handlers in the `api` directory for server-side logic.
 
-First, run the development server:
+- **Handling GET Request**  
+  Managing GET requests to retrieve data from the server.  
+  *Example:* Use `getServerSideProps` to fetch data on the server during page load.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Handling POST Request**  
+  Handling POST requests for submitting data to the server.  
+  *Example:* Create an API route that processes form submissions.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **NextResponse & NextRequest**  
+  Working with the `NextResponse` and `NextRequest` objects for more control over responses.  
+  *Example:* Use `NextRequest` to access request data and `NextResponse` to customize the response.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Handling GET Detail**  
+  Fetching detailed data based on specific query parameters.  
+  *Example:* Use `getServerSideProps` to fetch details based on a dynamic route parameter.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Handling URL Query Params**  
+  Working with URL query parameters to filter and retrieve data.  
+  *Example:* Access query parameters using `context.query` in `getServerSideProps`.
 
-## Learn More
+- **Handling PUT & PATCH Request**  
+  Managing PUT and PATCH requests for updating resources.  
+  *Example:* Create an API route to update a resource using `PUT` or `PATCH` methods.
 
-To learn more about Next.js, take a look at the following resources:
+- **Handling DELETE Request**  
+  Handling DELETE requests to remove resources from the server.  
+  *Example:* Set up an API route that deletes a resource based on an ID.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Headers**  
+  Manipulating HTTP headers for requests and responses.  
+  *Example:* Set custom headers in the response using `res.setHeader`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Cookie**  
+  Managing cookies for session handling and state management.  
+  *Example:* Use the `cookie` library to set and retrieve cookies in API routes.
 
-## Deploy on Vercel
+- **Caching di Routes Handler**  
+  Implementing caching strategies to optimize route handling performance.  
+  *Example:* Use server-side caching to improve response times for frequently requested data.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Happy learning! 🚀
