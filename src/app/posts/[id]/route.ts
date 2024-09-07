@@ -28,3 +28,12 @@ export async function PUT(
   Data[index] = { id: parseInt(params.id), ...body };
   return NextResponse.json(Data[index]);
 }
+
+export async function DELETE(
+  request: NextRequest,
+  { params }: { params: { id: string } }
+) {
+  const index = Data.findIndex((item) => item.id === parseInt(params.id));
+  Data.splice(index, 1);
+  return NextResponse.json({ message: "Post deleted" });
+}
