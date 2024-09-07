@@ -6,7 +6,7 @@ export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const userId = searchParams.get("userId");
   if (userId) {
-    const dataFilter = Data.filter((item) => item.userId == parseInt(userId));
+    const dataFilter = Data.filter((item) => item.userId === parseInt(userId));
     console.log(dataFilter);
     return NextResponse.json(dataFilter);
   }
