@@ -1,6 +1,15 @@
 import { NextResponse, NextRequest } from "next/server";
 import { Data } from "./data";
-export async function GET() {
+
+export async function GET(request: NextRequest) {
+  console.log(request.nextUrl.searchParams.get("userId"));
+  const searchParams = request.nextUrl.searchParams;
+  const userId = searchParams.get("userId");
+  if (userId) {
+    const dataFilter = Data.filter((item) => item.userId == parseInt(userId));
+    console.log(dataFilter);
+    return NextResponse.json(dataFilter);
+  }
   return NextResponse.json(Data);
 }
 
